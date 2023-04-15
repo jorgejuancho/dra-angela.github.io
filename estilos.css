@@ -5,7 +5,6 @@
   --font-size: 16px;
   --main-color: rgb(42, 172, 247);
   --second-color: #222;
-  --main-modal-color: rgba(247, 222, 30, 0.85);
   --second-modal-color: rgba(34, 34, 34, 0.85);
   --container-width: 1200px;
   --color-degradado: linear-gradient(
@@ -55,11 +54,6 @@ img {
   margin-right: 1rem;
 }
 
-/* .header h1 {
-    margin: 0 auto;
-    text-align: center;
-  } */
-
 .section {
   padding: 2rem;
   padding-top: 4rem;
@@ -70,6 +64,11 @@ img {
   min-height: 100vh;
   text-align: center;
 }
+
+.section__titulo{
+  margin-bottom: 5rem;
+}
+
 
 .panel {
   position: fixed;
@@ -126,21 +125,79 @@ img {
   background-color: rgb(42, 172, 247);
 }
 
-/* section contacto */
+/*---------------- section header------------------------ */
 
-.container {
+.social-links {
+  margin-right: 1rem;
+  color: black;
+}
+
+.social-links:hover {
+  color: azure;
+}
+
+/* -----------------section sobre mi ----------------- */
+
+.card__2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted #222;
+  width: 100%;
+  margin: 2rem;
+  padding: 1.25rem;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 500ms ease;
+}
+
+.card__2:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1%);
+}
+
+.card__2__texto-p{
+text-align: start;
+padding: 2rem;
+}
+
+
+
+/* ------------------seccion formacion-------------------------------------------- */
+.card__2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.card__2__img{
+  width: 15rem;
+}
+
+
+
+/* ------------------section contacto --------------------------*/
+
+.contacto {
+  display: flex;
+  justify-content: center;
+}
+
+.contacto__text {
   background-image: linear-gradient(rgba(2, 32, 62, 0.7), rgba(2, 32, 62, 0.7)),
-    url(./dra1.jpg);
+    url(./imagenes/dra1.jpg);
 
   background-repeat: no-repeat;
   background-size: contain;
+  width: 38%;
+  height: 90vh;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40%;
-  height: 100vh;
 }
 
 .box {
@@ -153,7 +210,23 @@ a {
   text-decoration: underline;
 }
 
-.box h2 {
-  cursor: pointer;
-  
+/* section footer */
+
+#footer {
+  background: whitesmoke;
+  padding: 1rem;
+  color: #222222;
+  font-size: 14px;
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+#footer .credits a {
+  color: rgb(42, 172, 247);
+
+  font-weight: bold;
 }
