@@ -6,6 +6,7 @@
   --main-color: rgb(42, 172, 247);
   --second-color: #222;
   --second-modal-color: rgba(34, 34, 34, 0.85);
+  --color-whitesmoke: whitesmoke;
   --container-width: 1200px;
   --color-degradado: linear-gradient(
     109.6deg,
@@ -30,12 +31,14 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  background-color: var(--color-whitesmoke);
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
 /* menu hamburguesa estilos */
 
 .header {
@@ -44,7 +47,6 @@ img {
   align-items: center;
   position: sticky;
   top: 0;
-  /* padding: 0.5rem; */
   background-image: var(--color-degradado);
   color: var(--second-color);
 }
@@ -65,10 +67,9 @@ img {
   text-align: center;
 }
 
-.section__titulo{
+.section__titulo {
   margin-bottom: 5rem;
 }
-
 
 .panel {
   position: fixed;
@@ -79,11 +80,15 @@ img {
   right: 0;
   width: 100%;
   background-color: var(--second-modal-color);
-  transition: transform 0.3s ease;
-  transform: translate(0, -100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s opacity 0, 5s ease;
+
+
 }
 .panel.is-active {
-  transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .panel-btn {
@@ -116,13 +121,13 @@ img {
   display: block;
   font-size: 1.5rem;
   text-decoration: none;
-  color: whitesmoke;
+  color: var(--color-whitesmoke);
   transition: all 0.3s ease;
 }
 
 .menu a:hover {
   font-weight: bold;
-  background-color: rgb(42, 172, 247);
+  background-color: var(--main-color);
 }
 
 /*---------------- section header------------------------ */
@@ -133,7 +138,7 @@ img {
 }
 
 .social-links:hover {
-  color: azure;
+  color: var(--color-whitesmoke)
 }
 
 /* -----------------section sobre mi ----------------- */
@@ -143,6 +148,7 @@ img {
   justify-content: center;
   align-items: center;
   border: 1px dotted #222;
+  border-radius: 1rem;
   width: 100%;
   margin: 2rem;
   padding: 1.25rem;
@@ -150,32 +156,27 @@ img {
   transition: all 500ms ease;
 }
 
-.card__2:hover{
+.card__2:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-1%);
 }
 
-.card__2__texto-p{
-text-align: start;
-padding: 2rem;
+.card__2__texto-p {
+  text-align: start;
+  padding: 2rem;
 }
 
-
-
-/* ------------------seccion formacion-------------------------------------------- */
+/* ------------------seccion formacion-------------------------- */
 .card__2 {
   display: flex;
   justify-content: center;
   text-align: center;
   width: 100%;
-  
 }
 
-.card__2__img{
+.card__2__img {
   width: 15rem;
 }
-
-
 
 /* ------------------section contacto --------------------------*/
 
@@ -185,7 +186,7 @@ padding: 2rem;
 }
 
 .contacto__text {
-  background-image: linear-gradient(rgba(2, 32, 62, 0.7), rgba(2, 32, 62, 0.7)),
+  background-image: linear-gradient(rgba(34, 34, 34, 0.1), rgba(34, 34, 34, 1)),
     url(./imagenes/dra1.jpg);
 
   background-repeat: no-repeat;
@@ -202,31 +203,50 @@ padding: 2rem;
 
 .box {
   font-size: 2rem;
-  color: aliceblue;
+  color: var(--color-whitesmoke)
 }
 
+
 a {
-  color: aliceblue;
+  color: var(--color-whitesmoke);
   text-decoration: underline;
+}
+
+
+/* ---------------------section experiencia ----------------- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  width: 30%;
+  margin: 2rem;
+  padding: 1.25rem;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 500ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1%);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
 }
 
 /* section footer */
 
 #footer {
-  background: whitesmoke;
-  padding: 1rem;
-  color: #222222;
-  font-size: 14px;
+  padding: 0.5rem;
+  color: var(--second-color);
   text-align: center;
 }
 
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-}
 
 #footer .credits a {
-  color: rgb(42, 172, 247);
-
+  color: var(--main-color);
   font-weight: bold;
 }
