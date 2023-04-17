@@ -1,0 +1,74 @@
+@media screen and (max-width: 600px){
+
+    /* general   */
+    body{
+        padding: 1rem;
+    }
+
+
+    .section {
+        padding: 0.5rem;
+        padding-top: 2rem;
+    }
+    /* header */
+.header{
+display: block;
+text-align: center;
+padding:  1rem 0rem;
+border-radius: 1rem;
+position:static
+
+
+
+}
+
+.icono__imagen{
+    visibility: hidden;
+        width: 0rem;
+    } 
+
+.icon{
+    padding-bottom: 1rem;
+}
+
+
+
+.card__2 {
+    display: block;
+    margin: 0rem;
+
+  }
+
+  /* experiencia */
+
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 100%;
+    margin: 1rem;
+    /* padding: 1rem; */
+    border-radius: 1rem;
+   
+  }
+
+  .card img {
+     border-radius: 1rem;
+  }
+  /* contacto  */
+ 
+  .contacto__text {
+    width: 90%;
+    height: 70vh;
+  
+  }
+  
+  .box {
+    font-size: 1.2rem;
+
+  }
+  
+
+}

@@ -2,7 +2,7 @@
 
 :root {
   --maint-font: sans-serif;
-  --font-size: 16px;
+  --font-size: 18px;
   --main-color: rgb(42, 172, 247);
   --second-color: #222;
   --second-modal-color: rgba(34, 34, 34, 0.85);
@@ -51,7 +51,7 @@ img {
   color: var(--second-color);
 }
 
-.icono {
+.icono__imagen {
   width: 3rem;
   margin-right: 1rem;
 }
@@ -161,9 +161,14 @@ img {
   transform: translateY(-1%);
 }
 
+.card__formacion__imagen{
+
+  border-radius: 50%;
+}
+
 .card__2__texto-p {
   text-align: start;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /* ------------------seccion formacion-------------------------- */
@@ -177,6 +182,31 @@ img {
 .card__2__img {
   width: 15rem;
 }
+
+/* ---------------------section experiencia ----------------- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  width: 30%;
+  margin: 2rem;
+  padding: 1.25rem;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 500ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1%);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+}
+
 
 /* ------------------section contacto --------------------------*/
 
@@ -213,29 +243,6 @@ a {
 }
 
 
-/* ---------------------section experiencia ----------------- */
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.card {
-  width: 30%;
-  margin: 2rem;
-  padding: 1.25rem;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  transition: all 500ms ease;
-}
-
-.card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-1%);
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-}
 
 /* section footer */
 
