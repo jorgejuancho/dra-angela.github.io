@@ -2,7 +2,7 @@
 
 :root {
   --maint-font: sans-serif;
-  --font-size: 18px;
+  --font-size: 20px;
   --main-color: rgb(42, 172, 247);
   --second-color: #222;
   --second-modal-color: rgba(34, 34, 34, 0.85);
@@ -17,7 +17,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: var(--maint-font);
+  font-family: 'Oswald', sans-serif;
   font-size: var(--font-size);
   scroll-behavior: smooth;
 }
@@ -36,7 +36,8 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
+  
+  /* height: auto; */
 }
 
 /* menu hamburguesa estilos */
@@ -162,7 +163,7 @@ img {
 }
 
 .card__formacion__imagen{
-
+width: 15rem;
   border-radius: 50%;
 }
 
@@ -217,12 +218,12 @@ img {
 
 .contacto__text {
   background-image: linear-gradient(rgba(34, 34, 34, 0.1), rgba(34, 34, 34, 1)),
-    url(./imagenes/dra1.jpg);
+    url(./imagenes/phone-99068_1280.png);
 
   background-repeat: no-repeat;
   background-size: contain;
   width: 38%;
-  height: 90vh;
+  height: 60vh;
   box-sizing: border-box;
 
   display: flex;
