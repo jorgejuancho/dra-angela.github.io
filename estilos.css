@@ -47,6 +47,7 @@ img {
   justify-content: space-evenly;
   align-items: center;
   position: sticky;
+  z-index: 997;
   top: 0;
   background-image: var(--color-degradado);
   color: var(--second-color);
@@ -194,6 +195,7 @@ width: 15rem;
   width: 30%;
   margin: 2rem;
   padding: 1.25rem;
+  border-radius: 1rem;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   transition: all 500ms ease;
 }
@@ -210,7 +212,7 @@ width: 15rem;
 
 
 /* ------------------section contacto --------------------------*/
-
+/* 
 .contacto {
   display: flex;
   justify-content: center;
@@ -241,7 +243,32 @@ width: 15rem;
 a {
   color: var(--color-whitesmoke);
   text-decoration: underline;
+} */
+
+/* ------------------section ubicacion--------------- */
+
+
+.mapa{
+
+  width: 80%;
+  margin: 2rem;
+  padding: .25rem;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 500ms ease;
 }
+
+
+.mapa:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1%);
+}
+
+
+
+
+
+
 
 
 
